@@ -388,6 +388,7 @@ header {
                 margin: 4px 2px;
                 padding: 8px 33px;
                 font-weight: 400;
+                border: 1px solid #cccccc;
             }
         }
 
