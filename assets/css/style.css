@@ -420,7 +420,7 @@ header {
 
         /* `sm` applies to x-small devices (portrait phones, less than 576px) */
         @media (max-width: 575.98px) {
-            width: 356px;
+            width: 348px;
         }
 
         .cart-img {
@@ -476,7 +476,7 @@ header {
 
             /* `sm` applies to x-small devices (portrait phones, less than 576px) */
             @media (max-width: 575.98px) {
-                width: 331px;
+                width: 323px;
             }
 
             h4 {
@@ -1069,3 +1069,13 @@ footer {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
