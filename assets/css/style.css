@@ -690,6 +690,8 @@ header {
             border-radius: 5px;
             margin: 0 auto;
 
+         
+
             /* `xl` applies to large devices (desktops, less than 1200px) */
             @media (max-width: 1199.98px) {
                 width: 390px;
@@ -789,42 +791,11 @@ header {
         }
     }
 
-    .drink-img {
-        &::before {
-            content: '';
-            width: 0;
-            height: 1px;
-            background-color: var(--custom-color);
-            position: absolute;
-            left: 20px;
-            bottom: 48px;
-            transition: all ease 1s;
-
-        }
-
-        &::after {
-            content: '';
-            width: 1px;
-            height: 0;
-            background-color: var(--custom-color);
-            position: absolute;
-            left: 35px;
-            bottom: 32px;
-            transition: all ease 1s;
-
-        }       
-
-        &:hover::before {
-            width: 270px;
-        }
-        
-        &:hover::after {
-            height: 374px;
-        }
 
         .juice-text {
             left: 50px;
             bottom: 68px;
+            z-index: 4;
 
             strong {
                 font-family: var(--heading-font);
@@ -845,10 +816,7 @@ header {
             }
         }
 
-        .gallery-img-1:hover {
-           color: rgba(0, 0, 0, 0.7);
-        }
-
+       
 
     }
 
@@ -860,9 +828,13 @@ header {
             display: none;
         }
     }
-    
-    .gallery-img-1 {
+
+    .smoll-img{
         position: relative; 
+
+    }
+    
+     .gallery-img-1 {
         display: inline-block; 
     }
     
@@ -870,7 +842,7 @@ header {
         display: block; 
     }
     
-    .gallery-img-1::before {
+    .gallery-img-1::after {
         content: ""; 
         position: absolute; 
         top: 15px; 
@@ -880,15 +852,60 @@ header {
         background-color: rgba(0, 0, 0, 0.60); 
         opacity: 0; 
         transition: all ease 0.5s;
+        z-index: 1;
     }
 
-    .img-big::before {
-        height: 95%;
+    .img-big::after {
+        display: block;
+        width: 100%;
+        height: 94%;
+
+
+
+
     }
     
-    .gallery-img-1:hover::before {
+    .gallery-img-1:hover::after {
         opacity: 1; 
-    }
+    } 
+
+
+    .drink-img {
+        &::before {
+            content: '';
+            width: 0;
+            height: 1px;
+            background-color: var(--custom-color);
+            position: absolute;
+            left: 20px;
+            bottom: 48px;
+            transition: all ease 1s;
+            z-index: 3;
+
+        }
+
+        &::after {
+            content: '';
+            width: 1px;
+            height: 0;
+            background-color: var(--custom-color);
+            position: absolute;
+            left: 35px;
+            bottom: 32px;
+            transition: all ease 1s;
+            z-index: 2;
+
+        }       
+
+        &:hover::before {
+            width: 270px;
+        }
+        
+        &:hover::after {
+            height: 374px;
+        }
+
+
 
     
 }
