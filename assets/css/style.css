@@ -204,12 +204,16 @@ header {
     }
 
     .img-sit {
+
+        
         /* `sm` applies to x-small devices (portrait phones, less than 576px) */
         @media (max-width: 991.98px) {
             /* order: 1; */
             text-align: center;
             display: none;
         }
+
+
     }
 
     .text-sid {
@@ -282,6 +286,12 @@ header {
         border: 1px solid #cccccc;
         position: relative;
 
+         /* `xl` applies to large devices (desktops, less than 1200px) */
+        @media (max-width: 1199.98px) {
+            width: 243px;
+        }
+
+
         /* `sm` applies to x-small devices (portrait phones, less than 576px) */
         @media (max-width: 991.98px) {
             /* margin-left: 100px;
@@ -302,6 +312,13 @@ header {
         background-color: #1b1b1b;
         right: 7px;
         bottom: 11px;
+
+
+         /* `xl` applies to large devices (desktops, less than 1200px) */
+        @media (max-width: 1199.98px) {
+            width: 241px;
+        }
+
 
         h3 {
             font-family: var(--body-font);
@@ -432,7 +449,7 @@ header {
 
         /* `sm` applies to x-small devices (portrait phones, less than 576px) */
         @media (max-width: 575.98px) {
-            width: 348px;
+            width: fit-content;
         }
 
         .cart-img {
